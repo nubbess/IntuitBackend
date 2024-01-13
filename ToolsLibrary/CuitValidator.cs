@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 namespace ToolsLibrary
 {
-    using System;
     using System.Text.RegularExpressions;
 
     public static class CuitValidator
@@ -22,7 +21,7 @@ namespace ToolsLibrary
             }
             else
             {
-                // Verificar que el CUIT esté bien formado
+                // Verifico que el CUIT esté bien formado
                 if (Regex.IsMatch(cuit, @"^(\d){2}-(\d){8}-(\d)|(\d){11}$"))
                 {
                     // Elimino los '-' si es necesario
