@@ -23,6 +23,8 @@ namespace IntuitChallenge.Controllers
         }
 
         [HttpGet]
+        [ProducesResponseType(200)]
+
         public async Task<IActionResult> GetClientes()
         {
             var clientes = await _cs.GetAll();
@@ -31,6 +33,11 @@ namespace IntuitChallenge.Controllers
         }
 
         [HttpGet("{id}", Name = "clienteId")]
+        [ProducesResponseType(200)]
+        [ProducesResponseType(400)]
+        [ProducesResponseType(404)]
+
+
         public async Task<IActionResult> GetCliente(int id)
         {
             if (id <= 0)
@@ -49,7 +56,11 @@ namespace IntuitChallenge.Controllers
             return Ok(cliente);
         }
 
-        [HttpGet("search")]
+        [HttpGet("chars")]
+        [ProducesResponseType(404)]
+        [ProducesResponseType(200)]
+
+
         public async Task<IActionResult> SearchByChars([FromQuery] string chars)
         {
             var clientes = await _cs.GetAll(a => a.Nombre.ToLower().Contains(chars));
@@ -61,6 +72,12 @@ namespace IntuitChallenge.Controllers
         }
 
         [HttpPost]
+        [ProducesResponseType(400)]
+        [ProducesResponseType(409)]
+        [ProducesResponseType(201)]
+
+
+
         public async Task<IActionResult> Insert([FromBody] ClienteCreateDto clienteDto)
         {
 
@@ -91,6 +108,9 @@ namespace IntuitChallenge.Controllers
         }
 
         [HttpPut("{id}")]
+        [ProducesResponseType(400)]
+        [ProducesResponseType(404)]
+        [ProducesResponseType(204)]
         public async Task<IActionResult> Update(int id, [FromBody] ClienteCreateDto clienteDto)
         {
             if (id <= 0)
@@ -118,6 +138,9 @@ namespace IntuitChallenge.Controllers
         }
 
         [HttpDelete]
+        [ProducesResponseType(400)]
+        [ProducesResponseType(404)]
+        [ProducesResponseType(204)]
         public async Task<IActionResult> Delete(int id)
         {
             if (id == 0)
