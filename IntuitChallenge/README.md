@@ -1,7 +1,4 @@
-﻿### Step 1:
-voy a usar SQL Server;
-
-create database IntuitClientes;
+﻿create database IntuitClientes;
 
 create table Clientes(
 -- para validar la unicidad del campo ID voy a hacer que se autogenere en la base de datos
