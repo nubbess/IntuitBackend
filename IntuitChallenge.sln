@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34322.80
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IntuitChallenge", "IntuitChallenge\IntuitChallenge.csproj", "{9E466169-7B52-429E-9AA3-ED21B7E75C08}"
+	ProjectSection(ProjectDependencies) = postProject
+		{01B09A84-1C03-4314-82B5-2EF5352DED6B} = {01B09A84-1C03-4314-82B5-2EF5352DED6B}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToolsLibrary", "ToolsLibrary\ToolsLibrary.csproj", "{01B09A84-1C03-4314-82B5-2EF5352DED6B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9E466169-7B52-429E-9AA3-ED21B7E75C08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E466169-7B52-429E-9AA3-ED21B7E75C08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E466169-7B52-429E-9AA3-ED21B7E75C08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E466169-7B52-429E-9AA3-ED21B7E75C08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01B09A84-1C03-4314-82B5-2EF5352DED6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01B09A84-1C03-4314-82B5-2EF5352DED6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01B09A84-1C03-4314-82B5-2EF5352DED6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01B09A84-1C03-4314-82B5-2EF5352DED6B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {092B08F3-D5DD-47DC-A216-A95E7BADD1EA}
+	EndGlobalSection
+EndGlobal
